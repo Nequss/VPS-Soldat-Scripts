@@ -96,4 +96,12 @@ sudo systemctl status highscore_watcher.service
 To view the logs:
 ```bash
 journalctl -u highscore_watcher.service -f
-... (10 lines left)
+```
+
+### Troubleshooting
+
+If the service fails to start:
+1. Check if the file paths are correct
+2. Ensure the user has proper permissions
+3. Verify that `inotify-tools` is installed
+4. Check the logs for detailed error messages
